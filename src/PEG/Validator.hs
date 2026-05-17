@@ -13,10 +13,7 @@ import qualified Data.Set as S
 import PEG.AST
 
 -- | Validate the grammar before running the recursive-descent interpreter.
---
--- The checks are deliberately conservative: whenever an expression may succeed
--- without consuming input, putting it under * or + is rejected, because a greedy
--- repetition of such an expression can loop forever.
+
 validateGrammar :: Grammar -> [String]
 validateGrammar g = concat
   [ duplicateErrors
