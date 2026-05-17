@@ -1,0 +1,6 @@
+# Complement of { a^n b^n | n >= 1 } over alphabet {a,b,c}.
+S = !(ANBN EOF) ANYe
+ANBN = "a" ANBN "b" / "a" "b"
+ALPH = "a" / "b" / "c"
+ANYe = ALPH ANYe / ""
+EOF = !.

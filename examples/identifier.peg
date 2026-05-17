@@ -1,0 +1,5 @@
+# Identifier similar to [A-Za-z_][A-Za-z0-9_]*, but exact keywords are rejected.
+S = !Keyword Identifier
+Keyword = ("if" / "then" / "else" / "while" / "return") EOF
+Identifier = [A-Za-z_] [A-Za-z0-9_]*
+EOF = !.

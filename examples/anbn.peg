@@ -1,0 +1,3 @@
+# { a^n b^n | n >= 1 }
+S = ANBN
+ANBN = "a" ANBN "b" / "a" "b"

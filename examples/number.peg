@@ -1,0 +1,7 @@
+# Signed integer or decimal number.
+# The Float branch must go before Integer because PEG choice is ordered.
+S = Sign? (Float / Integer)
+Float = Digits "." Digits
+Integer = Digits
+Sign = "+" / "-"
+Digits = [0-9]+

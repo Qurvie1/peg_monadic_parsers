@@ -1,0 +1,7 @@
+# URL-like http/https address. This checks a common shape, not full RFC 3986.
+S = Scheme "://" Host Path?
+Scheme = "https" / "http"
+Host = Label ("." Label)+
+Label = [A-Za-z0-9]+
+Path = "/" PathChar*
+PathChar = [A-Za-z0-9_./%+-]

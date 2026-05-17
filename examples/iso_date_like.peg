@@ -1,0 +1,6 @@
+# ISO-like date YYYY-MM-DD.
+# This checks the shape and simple month/day ranges, but not month-specific days.
+S = Year "-" Month "-" Day
+Year = [0-9] [0-9] [0-9] [0-9]
+Month = "0" [1-9] / "1" [0-2]
+Day = "0" [1-9] / [12] [0-9] / "3" [01]

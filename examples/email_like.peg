@@ -1,0 +1,6 @@
+# Email-like address. This is a compact educational recognizer, not full RFC 5322.
+S = Local "@" Domain
+Local = Atom ("." Atom)*
+Atom = [A-Za-z0-9_%+-]+
+Domain = Label ("." Label)+
+Label = [A-Za-z0-9]+

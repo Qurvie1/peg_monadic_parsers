@@ -1,0 +1,3 @@
+# CSS-like hex color: #RGB or #RRGGBB.
+S = "#" Hex Hex Hex Hex Hex Hex / "#" Hex Hex Hex
+Hex = [0-9A-Fa-f]

@@ -1,0 +1,7 @@
+# { a^n b^n c^n | n >= 1 }
+# This is the classical PEG trick from the lecture notes:
+# a positive lookahead first checks a^n b^n c, then the body parses a^n and b^n c^n.
+S = &(ANBN "c") As BNCN
+ANBN = "a" ANBN "b" / "a" "b"
+As = "a" As / "a"
+BNCN = "b" BNCN "c" / "b" "c"

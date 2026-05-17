@@ -1,0 +1,6 @@
+# Very small expression language: numbers with + and *.
+# This grammar checks the shape only and ignores precedence in the returned value.
+Expr = Term ("+" Term)*
+Term = Factor ("*" Factor)*
+Factor = Number / "(" Expr ")"
+Number = [0-9]+

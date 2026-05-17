@@ -1,0 +1,3 @@
+# Balanced parentheses, included to show recursive PEGs beyond regular languages.
+S = Parens
+Parens = "(" Parens ")" Parens / ""

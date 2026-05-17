@@ -1,0 +1,3 @@
+# IPv4-like dotted decimal address with octets in the 0..255 range.
+S = Octet "." Octet "." Octet "." Octet
+Octet = "25" [0-5] / "2" [0-4] [0-9] / "1" [0-9] [0-9] / [1-9] [0-9] / [0-9]
